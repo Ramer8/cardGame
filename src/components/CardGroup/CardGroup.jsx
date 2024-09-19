@@ -1,5 +1,6 @@
+import "./CardGroup.css"
 const CardGroup = () => {
-  return <div>CardGroup component</div>
+  return <div className="card-group-design">CardGroup component</div>
 }
 
 export default CardGroup
