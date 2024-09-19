@@ -1,0 +1,59 @@
+/* General grid container */
+.custom-grid {
+    margin-left: 1rem;
+    /* 4px in Tailwind is 1rem */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    /* equivalent to gap-2 */
+    padding: 0.5rem 1.75rem;
+    /* py-2 px-7 */
+}
+
+/* Inner grid */
+.custom-inner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-cols-3 */
+    padding: 0.25rem 0;
+    /* py-1 */
+}
+
+/* Image styles */
+.team-img {
+    width: 16rem;
+    /* w-64 */
+    border-radius: 1.5rem;
+    /* rounded-3xl */
+    transition: all 0.5s;
+    /* duration-500 */
+}
+
+.team-img:hover {
+    opacity: 0.7;
+    /* hover:opacity-70 */
+    width: 18rem;
+    /* hover:w-72 */
+}
+
+.car-img {
+    padding-left: 0.5rem;
+    /* px-2 */
+    transition: all .3s;
+    /* duration-300 */
+    grid-column: span 2;
+    /* col-span-2 */
+}
+
+.car-img:hover {
+    opacity: .9;
+    /* hover:opacity-90 */
+    margin-left: 6rem;
+    /* hover:ml-24 */
+}
+
+/* Divider styles */
+.divider {
+    margin: .5rem 0;
+    /* my-2 */
+}
