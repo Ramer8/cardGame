@@ -5,3 +5,40 @@
   /* padding: 2rem; */
   text-align: center;
 }
+
+@font-face {
+  font-family: f1FontBlack;
+  src: url(Formula1-Black.ttf);
+}
+
+@font-face {
+  font-family: f1FontBold;
+  src: url(Formula1-Bold.ttf);
+}
+
+@font-face {
+  font-family: f1FontRegular;
+  src: url(Formula1-Regular.ttf);
+}
+
+@font-face {
+  font-family: f1FontWide;
+  src: url(Formula1-Wide.ttf);
+}
+
+h2 {
+  font-family: f1FontBlack;
+  color: red;
+}
+
+h1 {
+  font-family: f1FontBold;
+  color: white;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+body {
+  font-family: f1FontRegular;
+  color: whitesmoke;
+}
