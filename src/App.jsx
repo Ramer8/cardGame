@@ -15,11 +15,12 @@ function App() {
       <h2>Choose a Card</h2>
       <CardGroup />
       <Grid />
-      {/* <SpeechApp /> */}
+      <SpeechApp />
+      <SpeechToText />
 
-      {/* <SpeechToText />
       <SpeechToNumber />
-      <AudioRecorder /> */}
+      <AudioRecorder />
+      <br />
     </>
   )
 }

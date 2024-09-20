@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import "./SpeechApp.css"
 const SpeechApp = () => {
   const [text, setText] = useState("")
   const [lang, setLang] = useState("es-ES") // El idioma por defecto es español de España
@@ -11,16 +11,12 @@ const SpeechApp = () => {
   }
 
   return (
-    <div>
-      <h1>Text-to-Speech con idioma</h1>
-      <textarea
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder="Escribe aquí el texto a leer"
-      />
-      <div>
+    <div className="speechApp-design">
+      <h1>Text-to-Speech</h1>
+      <div className="select-language-row">
         <label htmlFor="lang">Seleccionar idioma:</label>
         <select
+          className="select-speechApp"
           id="lang"
           value={lang}
           onChange={(e) => setLang(e.target.value)}
@@ -34,6 +30,13 @@ const SpeechApp = () => {
           {/* Añade más opciones de idioma según tus necesidades */}
         </select>
       </div>
+      <textarea
+        className="input-textarea-speechApp input-textarea"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Escribe aquí el texto a leer"
+      />
+
       <button onClick={handleSpeech}>Leer Texto</button>
     </div>
   )

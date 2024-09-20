@@ -1,0 +1,45 @@
+.input-textarea {
+    border-radius: .5em;
+    height: auto;
+    min-width: 80%;
+
+    outline: none;
+    font-family: f1FontRegular;
+    font-size: 15px;
+    line-height: 1.5;
+
+    text-align: left;
+    border: none;
+    /* border: 1px solid #e9ecef; */
+    /* color: #212529; */
+    color: lightblue;
+
+    font-weight: "bold";
+    background-color: rgb(42, 61, 82, .5);
+    overflow-wrap: break-word;
+    padding: 1em;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    .input-textarea {
+        background-color: rgb(42, 61, 82)
+    }
+}
+
+@media(min-width: 500px) {
+    .input-textarea {
+        min-height: 3em
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    textarea::placeholder {
+        color: black;
+    }
+
+    .input-textarea {
+        background-color: lightgray;
+        color: rgb(42, 61, 82);
+    }
+}

@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import "./SpeechToNumbers.css"
 // Comprobamos que el navegador soporta la API
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition
@@ -53,15 +53,18 @@ const SpeechToNumber = () => {
   return (
     <div>
       <h1>Reconocimiento de Voz para Números</h1>
+
       <textarea
+        className="input-textarea"
         value={transcription}
-        rows="10"
-        cols="50"
+        type="text"
+        placeholder="your speech numbers.."
+        // rows="10"
+        // cols="50"
         readOnly
-        style={{ color: "yellow", fontWeight: "bold" }}
       />
       <div>
-        <h2>Números detectados:</h2>
+        <h2 style={{ color: " dimgray" }}>Números detectados:</h2>
         <ul>
           {numbers.map((num, index) => (
             <li key={index}>{num}</li>

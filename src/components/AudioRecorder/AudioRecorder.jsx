@@ -27,7 +27,7 @@ const AudioRecorder = () => {
 
   return (
     <div>
-      <h2>Grabar audio</h2>
+      <h2 style={{ color: " dimgray" }}>Grabar audio</h2>
       {isRecording ? (
         <button onClick={disableMic} style={{ background: "blue" }}>
           Detener grabación

@@ -45,11 +45,11 @@ const SpeechToText = () => {
     <div>
       <h1>Reconocimiento de Voz (Speech-to-Text)</h1>
       <textarea
+        className="input-textarea"
         value={text}
         onChange={(e) => setText(e.target.value)}
-        rows="10"
-        cols="50"
-        style={{ color: "lightblue", fontWeight: "bold" }}
+        // rows="10"
+        // cols="50"
       />
       <div>
         {listening ? (
