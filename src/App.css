@@ -8,7 +8,6 @@
 
 @font-face {
   font-family: f1FontBlack;
-  /* src: url(Formula1-Black.ttf); */
   src: url('/fonts/Formula1-Black.ttf') format('truetype');
 }
 
