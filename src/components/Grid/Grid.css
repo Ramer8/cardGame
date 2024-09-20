@@ -9,7 +9,7 @@ img {
     /* 4px in Tailwind is 1rem */
     display: grid;
     /* grid-template-columns: 1fr; */
-    gap: 0.5rem;
+    gap: .5rem;
     /* equivalent to gap-2 */
     padding: 0.5rem 1.5rem;
     /* py-2 px-7 */
@@ -20,6 +20,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-cols-3 */
+
     padding: 0.25rem 0;
     /* py-1 */
 }
@@ -48,7 +49,7 @@ img {
 .car-img {
     padding-left: 0.5rem;
     /* px-2 */
-    transition: all .3s;
+    transition: all .4s;
     /* duration-300 */
     grid-column: span 2;
     /* col-span-2 */
@@ -76,5 +77,21 @@ img {
 
     .team-img {
         border-radius: .5rem;
+    }
+
+    .car-img:hover {
+        opacity: .9;
+        /* hover:opacity-90 */
+        margin-left: 1rem;
+        /* hover:ml-24 */
+    }
+
+    .car-img {
+        padding-left: 0rem;
+        /* px-2 */
+        transition: all .3s;
+        /* duration-300 */
+        grid-column: span 2;
+        /* col-span-2 */
     }
 }
