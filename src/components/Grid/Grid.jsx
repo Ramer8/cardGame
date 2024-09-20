@@ -104,6 +104,13 @@ const Grid = () => {
 
   console.log(chop(url)) // Output: mercedes
 
+  const handleSpeech = () => {
+    console.log("algo")
+    const utterance = new SpeechSynthesisUtterance(chop(url))
+    // utterance.lang = lang // Establece el idioma
+    utterance.lang = "en-GB" // Establece el idioma
+    speechSynthesis.speak(utterance)
+  }
   return (
     <>
       {imageTeams.length && (
@@ -113,7 +120,12 @@ const Grid = () => {
             <div key={i} className="custom-grid">
               <div className="custom-inner-grid">
                 <img alt="pic" src={element.urlTeam} className="team-img" />
-                <img alt="pic" src={element.urlCar} className="car-img" />
+                <img
+                  alt="pic"
+                  src={element.urlCar}
+                  className="car-img"
+                  onClick={handleSpeech}
+                />
               </div>
               <hr className="divider" />
             </div>
