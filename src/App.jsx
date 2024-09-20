@@ -5,10 +5,12 @@ import SpeechApp from "./components/SpeechApp/SpeechApp"
 import SpeechToNumber from "./components/SpeechToNumbers/SpeechToNumbers"
 import SpeechToText from "./components/SpeechToText/SpeechToText"
 import Grid from "./components/Grid/Grid"
+import Header from "./common/Header/Header"
 
 function App() {
   return (
     <>
+      <Header />
       <h1>Card Game</h1>
       <h2>Choose a Card</h2>
       <CardGroup />

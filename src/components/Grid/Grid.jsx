@@ -56,8 +56,8 @@ const Grid = () => {
     {
       id: 163637,
       urlTeam:
-        "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/williams%20blue.jpg",
-      // "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/2018-redesign-assets/team%20logos/williams",
+        // "https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/williams%20blue.jpg",
+        "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/2018-redesign-assets/team%20logos/williams",
       urlCar:
         "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/williams.png",
       // "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/williams.png.transform/4col/image.png",
@@ -90,13 +90,11 @@ const Grid = () => {
     },
   ]
 
-  console.log(imageTeams)
-
   return (
     <>
       {imageTeams.length && (
         <>
-          <hr className="mx-5 mb-4"></hr>
+          <hr className="divider" />
           {imageTeams.map((element, i) => (
             <div key={i} className="custom-grid">
               <div className="custom-inner-grid">
