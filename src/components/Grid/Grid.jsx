@@ -89,6 +89,20 @@ const Grid = () => {
       // "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alphatauri.png.transform/4col/image.png",
     },
   ]
+  const url =
+    "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/mercedes-benz.png"
+
+  // Extraer el último segmento de la URL
+  const chop = (url) => {
+    const lastSegment = url.substring(url.lastIndexOf("/") + 1)
+
+    // Quitar la extensión ".png"
+    const result = lastSegment.replace(".png", "")
+    const result2 = result.replace("-", " ")
+    return result2
+  }
+
+  console.log(chop(url)) // Output: mercedes
 
   return (
     <>
