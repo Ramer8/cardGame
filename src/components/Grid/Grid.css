@@ -89,7 +89,7 @@ img {
     .car-img {
         padding-left: 0rem;
         /* px-2 */
-        transition: all .3s;
+        transition: all .17s;
         /* duration-300 */
         grid-column: span 2;
         /* col-span-2 */

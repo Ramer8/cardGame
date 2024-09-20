@@ -89,8 +89,7 @@ const Grid = () => {
       // "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alphatauri.png.transform/4col/image.png",
     },
   ]
-  const url =
-    "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/mercedes-benz.png"
+  // const url = "https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2024/mercedes-benz.png"
 
   // Extraer el último segmento de la URL
   const chop = (url) => {
@@ -98,14 +97,12 @@ const Grid = () => {
 
     // Quitar la extensión ".png"
     const result = lastSegment.replace(".png", "")
-    const result2 = result.replace("-", " ")
+    let result2 = result.replace("-", " ")
+    console.log(result2)
     return result2
   }
 
-  console.log(chop(url)) // Output: mercedes
-
-  const handleSpeech = () => {
-    console.log("algo")
+  const handleSpeech = (url) => {
     const utterance = new SpeechSynthesisUtterance(chop(url))
     // utterance.lang = lang // Establece el idioma
     utterance.lang = "en-GB" // Establece el idioma
@@ -117,15 +114,14 @@ const Grid = () => {
         <>
           <hr className="divider" />
           {imageTeams.map((element, i) => (
-            <div key={i} className="custom-grid">
+            <div
+              key={i}
+              className="custom-grid"
+              onClick={() => handleSpeech(element.urlCar)}
+            >
               <div className="custom-inner-grid">
                 <img alt="pic" src={element.urlTeam} className="team-img" />
-                <img
-                  alt="pic"
-                  src={element.urlCar}
-                  className="car-img"
-                  onClick={handleSpeech}
-                />
+                <img alt="pic" src={element.urlCar} className="car-img" />
               </div>
               <hr className="divider" />
             </div>
