@@ -8,22 +8,23 @@
 
 @font-face {
   font-family: f1FontBlack;
-  src: url(Formula1-Black.ttf);
+  /* src: url(Formula1-Black.ttf); */
+  src: url('/fonts/Formula1-Black.ttf') format('truetype');
 }
 
 @font-face {
   font-family: f1FontBold;
-  src: url(Formula1-Bold.ttf);
+  src: url('/fonts/Formula1-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: f1FontRegular;
-  src: url(Formula1-Regular.ttf);
+  src: url('/fonts/Formula1-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: f1FontWide;
-  src: url(Formula1-Wide.ttf);
+  src: url('/fonts/Formula1-Wide.ttf') format('truetype');
 }
 
 h2 {
