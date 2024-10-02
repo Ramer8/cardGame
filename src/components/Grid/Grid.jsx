@@ -98,7 +98,6 @@ const Grid = () => {
     // Quitar la extensión ".png"
     const result = lastSegment.replace(".png", "")
     let result2 = result.replace("-", " ")
-    console.log(result2)
     return result2
   }
 

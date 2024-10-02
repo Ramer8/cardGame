@@ -13,7 +13,7 @@ function App() {
       <Header />
       <h1>Card Game</h1>
       <h2>Choose a Card</h2>
-      <CardGroup />
+      {/* <CardGroup /> */}
       <Grid />
       <SpeechApp />
       <SpeechToText />

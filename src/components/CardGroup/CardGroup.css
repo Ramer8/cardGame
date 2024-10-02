@@ -1,3 +1,41 @@
 .card-group-design {
     color: #3b81f6;
+
 }
+
+/* General grid container */
+img {
+    max-width: 100%;
+    /* mantiente la proporcionalidad de las img al cambiar el tamano de pantalla */
+}
+
+.card-group-content {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .1em;
+    background-color: whitesmoke;
+    border-radius: 1em;
+}
+
+.car_pic {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.car_pic:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+    /* transform: translateX(-40em); */
+    /* upper left */
+    /* transform: scale(1.5) translate(50%, 50%); */
+    /* bottom right */
+    /* transform: scale(1.5) translate(-50%, -50%); */
+    /* bottom left */
+    /* transform: scale(1.5) translate(50%, -50%); */
+    /* upper right */
+    /* transform: scale(1.5) translate(-50%, 50%); */
+    /* transform: rotate(0.5turn); */
+}
+
+/* GDE NO-2024-105448153-APN-INPM#ANMAT */
